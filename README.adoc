@@ -28,3 +28,9 @@ curl http://localhost:12080/conversion/number/32
 
 . Resultado de testes
 image::thumbs/screen_results.png[]
+
+. Testes de carga via WRK
+[source, bash]
+----
+wrk -t10 -d30s -s random.lua http://localhost:12080/conversion/number/
+----
