@@ -44,7 +44,7 @@ public class MySpringBootRouter extends RouteBuilder {
 			.to(cxfUri)
 			// -------------------------------------------------------------------------------------------------------------
 			.log("After Service Invocation --- ${body} ---")
-			.log("Propety Saved --- ${exchangeProperty.propNum}")
+			.log("Property Saved --- ${exchangeProperty.propNum}")
 			// --- Needs Conversion to apply trim 
 			.convertBodyTo(String.class)
 			// ------------------------------------------
