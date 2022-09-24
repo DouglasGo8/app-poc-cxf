@@ -1,0 +1,31 @@
+= POC CFX Camel Concurrency
+
+== Objetivo
+
+. Criar uma solucao simples apenas em camel, sem extensoes de Spring Boot para consumo de WEBService SOAP Externo
+. O Service consome uma API exter basica para conversao de numeros
+. A app expoes um api Rest para consumo de Soap UI
+
+== Instrucoes de  uso
+
+.Para gerar os wsdl resources
+[source,bash]
+----
+mvn compile dependecy:resolve
+----
+
+.Para rodar a aplicacao
+[source,bash]
+----
+mvn compile spring-boot:run
+----
+
+. Para Testar a Aplicacao, limitada ate 50
+[source, bash]
+----
+curl http://localhost:12080/conversion/number/32
+----
+
+. Resultado de testes
+
+image
