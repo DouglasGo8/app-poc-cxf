@@ -27,5 +27,4 @@ curl http://localhost:12080/conversion/number/32
 ----
 
 . Resultado de testes
-
-image
+image::thumbs/screen_results.png[]
