@@ -1,4 +1,4 @@
-package com.santanderbr.cfx.context;
+package com.poc.cfx.context;
 
 import java.math.BigInteger;
 
@@ -20,7 +20,7 @@ public class MySpringBootRouter extends RouteBuilder {
 	public void configure() {
 
 		final String cxfUri = "cxf:https://www.dataaccess.com/webservicesserver/NumberConversion.wso?"
-				+ "serviceClass=com.santanderbr.cfx.context.NumberConversionSoapImpl";
+				+ "serviceClass=com.poc.cfx.context.NumberConversionSoapImpl";
 
 		restConfiguration().component("netty-http").host("localhost").port(12080).bindingMode(RestBindingMode.auto);
 

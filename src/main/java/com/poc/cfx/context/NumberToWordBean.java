@@ -1,4 +1,4 @@
-package com.santanderbr.cfx.context;
+package com.poc.cfx.context;
 
 import org.apache.camel.Handler;
 import org.apache.camel.Header;

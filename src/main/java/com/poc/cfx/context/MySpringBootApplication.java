@@ -1,9 +1,7 @@
-package com.santanderbr.cfx.context;
+package com.poc.cfx.context;
 
-import org.apache.camel.component.cxf.CxfEndpoint;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class MySpringBootApplication {
