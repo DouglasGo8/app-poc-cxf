@@ -38,12 +38,11 @@ public class MySpringBootRouter extends RouteBuilder {
 			.transform(exchangeProperty("number"))
 			.convertBodyTo(BigInteger.class)
 			//.log("Before Send --- ${body} ---")
-			// ---------------------------------------
+			// ---------- CXF CONSUMER --------------------------------------------------------------------
 			.setHeader(CxfConstants.OPERATION_NAME, constant("NumberToWords"))
 			.setHeader(CxfConstants.OPERATION_NAMESPACE, constant("http://www.dataaccess.com/webservicesserver/"))
-			// ---------- CXF CONSUMER ------------
 			.to(cxfUri)
-			// ------------------------------------------------
+			// -------------------------------------------------------------------------------------------------------------
 			.log("After Service Invocation --- ${body} ---")
 			.log("Propety Saved --- ${exchangeProperty.propNum}")
 			// --- Needs Conversion to apply trim 
